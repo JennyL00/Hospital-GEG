@@ -5,7 +5,7 @@ ul {
 }
 
 .menu {
-    background: #4B91C8;
+    background: #0078BA;
     color: white;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@ ul {
 
 .submenu {
     height: 130px;
-    background: #4B91C8;
+    background: #0078BA;
     
 }
 a{
