@@ -4,40 +4,258 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossOrigin="anonymous"/>
+    <link href="../css/estilos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="../css/styleF.css" rel="stylesheet"/>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-<iframe class="ifFuter" src="layout.html"></iframe>
-<h1>Pagina Fernando </h1>
+    <div class="flexbox">
+        <div class="row menu">
+            <div class="col-5">
+            </div>
+            <div class="col-7">
+                <ul class="menu" tabindex="0" alt="Menú principal">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default"
+                                data-toggle="dropdown" onclick="redirectInicio()">
+                            Inicio <span class="caret"></span>
+                        </button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default"
+                                data-toggle="dropdown">
+                            Correo Institucional <span class="caret"></span>
+                        </button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default"
+                                data-toggle="dropdown">
+                            Quipux <span class="caret"></span>
+                        </button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default"
+                                data-toggle="dropdown" onclick="redirectAgendarCita()">
+                            Agendar Cita <span class="caret"></span>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row menu">
+        <img
+                class="p-0"
+                src="../img/LogoHospital.jpg" alt="Imagen del logo del hospital" tabindex="0"/>
+    </div>
+    <div class="row menu">
+        <div class="col">
+            <ul class="menu nav" tabindex="0">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
+                        HOSPITAL  <span class="caret"></span>
+                    </button>
 
-
-<div class="row">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CDV2AwOeeis" title="YouTube video player"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-<div class ="container">
-    <div class="thumbnail-img">
-        <img src="../img/publicidad1-inicio.jpg" alt="">
-        <i class=" fas fa-play"></i>
+                    <ul class="dropdown-menu submenu" role="menu">
+                        <li class="menuLi"><a tabindex="0">MISIÓN Y VISIÓN</a></li>
+                        <li class="menuLi"><a tabindex="0">AUTORIDADES</a></li>
+                        <li class="menuLi"><a href="noticias.html" tabindex="0">NOTICIAS</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
+                        GUÍA DEL PACIENTE <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
+                        CARTERA DE SERVICIOS <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
+                        RED PÚBLICA DE SALUD <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
+                        TRANSPARENCIA <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
+                        BIBLIOTECA <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
+                        PROGRAMAS <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
+                        CONTACTO <span class="caret"></span>
+                    </button>
+                </div>
+                <li><i class="fa fa-magnifying-glass"></i></li>
+            </ul>
+        </div>
+    </div>
+        <div class="row menu contenedor ">
+            <div class="texto">
+                <h1 tabindex="0">Noticias</h1>
+                <p tabindex="0">Mantente al día HGEG</p>
+            </div>
+            <img tabindex="0"
+                    class="rounded p-0"
+                    src="../img/header.jpg" alt="Hombre consultando noticias a través del telefono móvil"/>
+        </div>
 
     </div>
-</div>
-<div class="popup-modal">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CDV2AwOeeis" title="YouTube video player"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <span  class="l1"></span>
-    <span  class="l2"></span>
-
-</div>
-
-<script src="../js/popup.js"></script>
 
 
 
+    <section class="card-section">
+        <div tabindex="0" class="card">
+            <iframe   width="100%" height="315" src="https://www.youtube.com/embed/BCi_TgSxbPQ"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-content">
+                <div  class="parrafo">
+                    <h2  tabindex="0" style="color: #4B91C8">Medicamentos llegaron al Hospital General Enrique Garcés de Quito</h2>
+                    <h6  tabindex="0" >  Quito, 22 de enero de 2022 </h6>
+                    <p  tabindex="0"  >   El Hospital General Enrique Garcés,
+                        de Quito recibió el sábado 22 de enero, un importante lote de
+                        medicamentos como parte del proceso de compra masiva que realizó
+                        el Ministerio de Salud Pública (MSP) a través de un proceso de régimen
+                        <a tabindex="0"  onclick="vermas('mas');" id="mas">... [leer más]</a>
+                    </p>
+                    <p   tabindex="0" id="desplegar">
+                        especial y que fueron destinados a 135 hospitales a escala nacional.
+                        Se destacan una serie de fármacos para tratar distintas enfermedades,
+                        como  Tramadol líquido parental, que estaba escaso en el mercado y que
+                        es necesario para el manejo del dolor, especialmente en casos oncológicos.
+                        Asimismo, anestésicos que se utilizan en quirófano y medicamentos para
+                        pacientes que se encuentran en hospitalización.<br />
+
+                        A la lista se suman otros fármacos para pacientes con enfermedades
+                        crónicas no transmisibles que reciben atención en consulta externa,
+                        también destinados al tratamiento de salud mental, diabetes, presión
+                        arteria, entre otros.<br />
+
+                        La gerente hospitalaria, Elizabeth Vásquez, destacó la gestión del
+                        MSP para abastecer a las unidades de salud con el objetivo de garantizar
+                        el tratamiento de los usuarios. “De esta manera, nuestra casa de salud
+                        cuenta con una provisión del 90%, incluidos los medicamentos adquiridos
+                        de manera interna”.<br />
+
+                        Mientras, que algunos líderes de las distintas especialidades coincidieron
+                        en la oportuna llegada de los medicamentos de la compra centralizada que
+                        permiten solventar las necesidades de los pacientes.<br />
+
+                        La distribución interna se realiza de manera inmediata y planificada,
+                        tanto a la farmacia de emergencia como consulta externa, hospitalaria
+                        y quirófano, a fin de brindar una adecuada atención a los usuarios.<br />
+
+                        El MSP contrató 149 ítems de medicamentos, correspondientes a 5,1
+                        millones de unidades para su entrega a escala nacional, en cuatro fases.
+                        Son de calidad, alto impacto y garantizan la salud de la población.<br />
+                        <a tabindex="0"  onclick="vermas('menos');" id="menos">... [leer menos]</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div tabindex="0" class="card">
+            <iframe   width="100%" height="315" src="https://www.youtube.com/embed/9JYbI4RSJ4A"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            <div class="card-content">
+                <div  class="parrafo2">
+                    <h2  tabindex="0" style="color:#4B91C8 "> Feria Infancia con Futuro se desarrolló en Quito</h2>
+                    <h6  tabindex="0" >Quito, 9 de diciembre de 2022</h6>
+                    <p  tabindex="0" >
+                        El Ministerio de Salud Pública (MSP) en coordinación con la Secretaría Técnica
+                        Ecuador Crece Sin Desnutrición Infantil apadrinó la feria “Infancia con Futuro”.
+                        Esta se desarrolló en el sector Quitumbe, sur de Quito. La meta del Gobierno
+                        acional es reducir en 6 puntos porcentuales la incidencia nacional hasta el año 2025.
+                        <a tabindex="0" onclick="vermas2('mas');" id="mas2">... [leer más]</a>
+                    </p>
+                    <p  tabindex="0" id="desplegar2">
+                        En esta ocasión, el ministro de Salud Pública, José Ruales, lideró la apertura
+                        de la feria que convocó a más de 500 personas del sur de la ciudad.<br />
+
+                        A la fecha estas ferias se han desarrollado en 50 cantones del país y
+                        han permitido el acceso a los servicios y atenciones de salud a la población
+                        objetivo, en este caso, mujeres embarazadas y niños menores de 2 años.<br />
+
+                        De igual manera, se contó con la participación de diversos actores e
+                        instituciones que a diario articulan operaciones dentro de la Estrategia
+                        Nacional Ecuador Crece Sin Desnutrición (ECSDI), cuyo propósito es prevenir
+                        la desnutrición infantil en el Ecuador.<br />
+
+                        El Ministerio de Salud articula acciones en territorio para promover
+                        la implementación del denominado paquete priorizado que consiste en
+                        bienes y servicios de salud destinados a este segmento de la población.<br />
+
+                        Participó del evento Francisco Viteri, secretario de Salud del Municipio
+                        de Quito, quien indicó que combatir la desnutrición conjuga una serie de
+                        factores en un trabajo multidisciplinario. “En Quito, se han realizado
+                        entre otras acciones el adecentamiento de barrios priorizados y mejoramiento
+                        de vías de acceso, rutas alternas para recolección de residuos, apertura
+                        de ferias agrícolas para la seguridad alimentaria”.<br />
+
+                        Ruales, señaló que en el marco de esta estrategia se han intervenido 659
+                        centros de salud en infraestructura, conectividad y equipamiento con una
+                        inversión de USD 12.3 millones, esto con el objetivo de brindar atención
+                        a embarazadas en condiciones adecuadas. En 2022 se han atendido 245.930
+                        mujeres embarazadas”.<br />
+
+                        Juntos, desde nuestros territorios, fomentamos la corresponsabilidad
+                        para prevenir, reducir y vencer la desnutrición crónica infantil en el país.<br />
+
+                        <a tabindex="0"  onclick="vermas2('menos');" id="menos2">... [leer menos]</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Archivos de javascript -->
+    <script src="../js/popup.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Archivos de javascript-->
+    <script type="text/javascript">
+        function redirectInicio()
+        {
+
+            window.location.href="inicio.html";
+        };
+
+        function redirectAgendarCita()
+        {
+
+            window.location.href="agendar_cita.html";
+        }
+    </script>
 </body>
 </html>
