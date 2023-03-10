@@ -4,27 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/estilos.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+              crossOrigin="anonymous"/>
+    <link href="../css/inicio_estilos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
-    <iframe class="ifFuter" src="layout.html"></iframe>
-    <h1>Hola</h1>
-    <div class="row">
-        <img
-            class="rounded"
-            src="../img/diaposHospital.jpg" alt=""/>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <img
-            class="rounded"
-            src="../img/publicidad1-inicio.jpg" alt=""/>
+    <div class="flexbox">
+        <div class="row">
+            <iframe class="ifFuter" src="layout.html"></iframe>
         </div>
-        <div class="col-6">
+    
+        <div class="row">
             <img
-            class="rounded"
-            src="../img/diaposHospital.jpg" alt=""/>
+                class="rounded p-0"
+                src="../img/diaposHospital.jpg" tabindex="0" alt="Imagen de la sala de espera del hospital" width="1530px" height="450px" />
+        </div>
+        <div class="row">
+            <div class="col publicidad">
+                <img 
+                class="rounded"
+                src="../img/publicidad1-inicio.jpg" tabindex="0" alt="Imagen de la campaña para ponerte las vacunas contra el covid "/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col publicidad" tabindex="0">
+                TEMAS IMPORTANTES
+            </div>
+            
+            
+        </div>
+        <div class="row">
+            <div class="menu_inferior">
+                <button type="button" class="btn btn-default boton_menu_i" tabindex="0" alt="No habilitado">
+                        NOTICIAS
+                </button>
+              </div>
+        </div>
+        <div class="row submenu_inferior">
+            <div class="row">
+                <div class="col-4 menu_inferior">
+                    <button type="button" class="btn btn-default boton_menu_i">
+                            ACCIÓN NUTRICIÓN 
+                            </br>
+                            Hacia la desnutrición cero
+                    </button>
+                  </div>
+                  <div class="col-4 menu_inferior">
+                    <button type="button" class="btn btn-default boton_menu_i"
+                            data-toggle="dropdown">
+                            RESPIRA ECUADOR 
+                            </br>
+                            Libre de tuberculosis
+                    </button>
+                  </div>
+                  <div class="col-4 menu_inferior">
+                    <button type="button" class="btn btn-default boton_menu_i"
+                            data-toggle="dropdown">
+                            ACUERDOS
+                            </br>
+                            Ministeriales
+                    </button>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-4 menu_inferior">
+                    <button type="button" class="btn btn-default boton_menu_i"
+                            data-toggle="dropdown">
+                            CHAO HUMO 
+                            </br>
+                            Ecuador libre de humo
+                    </button>
+                  </div>
+                  <div class="col-4 menu_inferior">
+                    <button type="button" class="btn btn-default boton_menu_i"
+                            data-toggle="dropdown">
+                            PREVENCIÓN 
+                            </br>
+                            La mejor cura
+                    </button>
+                  </div>
+                  <div class="col-4 menu_inferior">
+                    <button type="button" class="btn btn-default boton_menu_i"
+                            data-toggle="dropdown">
+                            TRÁMITE CIUDADANO
+                            </br>
+                            Ciudadanía informada
+                    </button>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="btn-group menu_inferior">
+                    <button type="button" class="btn btn-default boton_menu_i"
+                            data-toggle="dropdown">
+                            LABORATORIO 
+                            </br>
+                            Resultado de examenes
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <iframe class="ifFuter_final" src="layout_inferior.html"></iframe>
         </div>
     </div>
 </body>
