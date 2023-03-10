@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossOrigin="anonymous" />
+    <link href="../css/estilos.css" rel="stylesheet" />
+    <link href="../css/estilos_cita.css" rel="stylesheet" />
+    <title>Agendar una cita</title>
+</head>
+
+<body>
+    <div class="flexbox">
+        <div class="row menu">
+            <div class="col-5">
+            </div>
+            <div class="col-7">
+                <ul class="menu" tabindex="0" alt="Menú principal">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" data-toggle="dropdown" onclick="redirectInicio()">
+                            Inicio <span class="caret"></span>
+                        </button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" data-toggle="dropdown">
+                            Correo Institucional <span class="caret"></span>
+                        </button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" data-toggle="dropdown">
+                            Quipux <span class="caret"></span>
+                        </button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" data-toggle="dropdown" onclick="redirectAgendarCita()">
+                            Agendar Cita <span class="caret"></span>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row menu">
+        <img class="p-0" src="../img/LogoHospital.jpg" alt="Imagen del logo del hospital" tabindex="0" />
+    </div>
+    <div class="row menu">
+        <div class="col">
+            <ul class="menu nav" tabindex="0">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        HOSPITAL <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu submenu" role="menu">
+                        <li class="menuLi"><a tabindex="0">MISIÓN Y VISIÓN</a></li>
+                        <li class="menuLi"><a tabindex="0">AUTORIDADES</a></li>
+                        <li class="menuLi"><a href="noticias.html" tabindex="0">NOTICIAS</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        GUÍA DEL PACIENTE <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        CARTERA DE SERVICIOS <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        RED PÚBLICA DE SALUD <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        BIBLIOTECA <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        PROGRAMAS <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        CONTACTO <span class="caret"></span>
+                    </button>
+                </div>
+                <li><i class="fa fa-magnifying-glass"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="cita_titulo" tabindex="0">
+        <h1>AGENDAR CITA MÉDICA</h1>
+    </div>
+
+    <form>
+        <fieldset>
+            <legend>Datos del paciente</legend>
+            <div class="form-group">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" placeholder="Ingrese sus nombres completos" required
+                    tabindex="1">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos completos"
+                    required tabindex="2">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su e-mail (example@example.com)"
+                    required tabindex="3">
+            </div>
+            <div class="form-group">
+                <label for="calle-principal">Calle principal:</label>
+                <input type="text" id="calle-principal" name="calle-principal"
+                    placeholder="Ingrese la calle principal de su dirección" required tabindex="4">
+            </div>
+            <div class="form-group">
+                <label for="calle-secundaria">Calle secundaria:</label>
+                <input type="text" id="calle-secundaria" name="calle-secundaria"
+                    placeholder="Ingrese la calle secundaria de su dirección" required tabindex="5">
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese su ciudad" required tabindex="6">
+            </div>
+            <div class="form-group">
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" name="provincia" required tabindex="7">
+                    <option value="">Seleccione una provincia</option>
+                    <option value="azuay">Azuay</option>
+                    <option value="bolivar">Bolívar</option>
+                    <option value="canar">Cañar</option>
+                    <option value="carchi">Carchi</option>
+                    <option value="chimborazo">Chimborazo</option>
+                    <option value="cotopaxi">Cotopaxi</option>
+                    <option value="el-oro">El Oro</option>
+                    <option value="esmeraldas">Esmeraldas</option>
+                    <option value="galapagos">Galápagos</option>
+                    <option value="guayas">Guayas</option>
+                    <option value="imbabura">Imbabura</option>
+                    <option value="loja">Loja</option>
+                    <option value="los-rios">Los Ríos</option>
+                    <option value="manabi">Manabí</option>
+                    <option value="morona-santiago">Morona Santiago</option>
+                    <option value="napo">Napo</option>
+                    <option value="orellana">Orellana</option>
+                    <option value="pastaza">Pastaza</option>
+                    <option value="pichincha">Pichincha</option>
+                    <option value="santa-elena">Santa Elena</option>
+                    <option value="santo-domingo-de-los-tsachilas">Santo Domingo de los Tsáchilas</option>
+                    <option value="sucumbios">Sucumbíos</option>
+                    <option value="tungurahua">Tungurahua</option>
+                    <option value="zamora-chinchipe">Zamora Chinchipe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="celular">Número celular:</label>
+                <input type="tel" id="celular" name="celular" placeholder="Ingrese su número de celular" required
+                    tabindex="8">
+            </div>
+            <div class="form-group">
+                <label for="convencional">Número convencional:</label>
+                <input type="tel" id="convencional" name="convencional" placeholder="Ingrese su número convencional"
+                    tabindex="9">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la cita</legend>
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required tabindex="10">
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required tabindex="11">
+            </div>
+        </fieldset>
+
+        <button type="submit" tabindex="12">AGENDAR CITA</button>
+    </form>
+
+    <div class="row">
+        <iframe class="ifFuter_final" src="layout_inferior.html"></iframe>
+    </div>
+
+    <!--Archivos de javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!--Archivos de javascript-->
+    <script type="text/javascript">
+        function redirectInicio()
+        {
+       
+        window.location.href="inicio.html";
+        };
+        
+        function redirectAgendarCita()
+        {
+       
+        window.location.href="agendar_cita.html";
+        }
+    </script>
+</body>
+
+</html>
