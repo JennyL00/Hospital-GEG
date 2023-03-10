@@ -21,7 +21,7 @@
             <div class="col-7">
                 <ul class="menu" tabindex="0" alt="Menú principal">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default" data-toggle="dropdown">
+                        <button type="button" class="btn btn-default" data-toggle="dropdown" onclick="redirectInicio()">
                             Inicio <span class="caret"></span>
                         </button>
                     </div>
@@ -36,7 +36,7 @@
                         </button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default" data-toggle="dropdown">
+                        <button type="button" class="btn btn-default" data-toggle="dropdown" onclick="redirectAgendarCita()">
                             Agendar Cita <span class="caret"></span>
                         </button>
                     </div>
@@ -56,9 +56,9 @@
                     </button>
 
                     <ul class="dropdown-menu submenu" role="menu">
-                        <li class="menuLi"><a href="inicio.html" tabindex="0">MISIÓN Y VISIÓN</a></li>
-                        <li class="menuLi"><a href="#" tabindex="0">AUTORIDADES</a></li>
-                        <li class="menuLi"><a href="#" tabindex="0">NOTICIAS</a></li>
+                        <li class="menuLi"><a tabindex="0">MISIÓN Y VISIÓN</a></li>
+                        <li class="menuLi"><a tabindex="0">AUTORIDADES</a></li>
+                        <li class="menuLi"><a href="noticias.html" tabindex="0">NOTICIAS</a></li>
                         
                     </ul>
                 </div>
@@ -212,6 +212,19 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <!--Archivos de javascript-->
+    <script type="text/javascript">
+        function redirectInicio()
+        {
+       
+        window.location.href="inicio.html";
+        };
+        
+        function redirectAgendarCita()
+        {
+       
+        window.location.href="agendar_cita.html";
+        }
+    </script>
 </body>
 
 </html>
